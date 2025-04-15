@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="272dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="288dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="The Quiz has 5 questions"
+        android:textColor="#FAFAFA"
+        android:textColorHighlight="#FAFAFA"
+        android:textColorHint="#FAFAFA"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="36dp"
+        android:text="Begin Quiz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioDifficulty" />
+
+    <RadioGroup
+        android:id="@+id/radioDifficulty"
+        android:layout_width="389dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="13dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="92dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="Easy"
+            android:textColor="#FAFAFA"
+            android:textColorHighlight="#FAFAFA"
+            android:textColorHint="#FAFAFA"
+            android:textColorLink="#FAFAFA"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="Medium"
+            android:textColor="#FAFAFA"
+            android:textColorHighlight="#FAFAFA"
+            android:textColorHint="#FAFAFA"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/radioButton"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.486" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="Hard"
+            android:textColor="#FAFAFA"
+            android:textColorHighlight="#FAFAFA"
+            android:textColorHint="#FAFAFA"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioButton2"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:hint="Enter Your Name"
+        android:inputType="text"
+        android:textColor="#FAFAFA"
+        android:textColorHighlight="#FAFAFA"
+        android:textColorHint="#FAFAFA"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="193dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
